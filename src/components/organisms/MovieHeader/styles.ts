@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions, StatusBar } from 'react-native';
+import { StyleSheet, Dimensions, StatusBar , Platform } from 'react-native';
 import { scale } from 'react-native-utils-scale';
 
 const height = Dimensions.get('window').height;
@@ -13,6 +13,7 @@ export default StyleSheet.create({
 	headerImage: {
 		alignSelf: 'stretch',
 		height: height / 2.75,
+		
 	},
 	backIconContainer: {
 		width: scale(48),
@@ -24,6 +25,7 @@ export default StyleSheet.create({
 		top: StatusBar.currentHeight! + scale(8),
 		borderRadius: scale(24),
 		overflow: 'hidden',
+		marginTop: Platform.OS === "ios" ?  33 : 0 ,
 	},
 	backIconButton: {
 		flex: 1,
@@ -42,5 +44,6 @@ export default StyleSheet.create({
 		top: StatusBar.currentHeight! + scale(8),
 		borderRadius: scale(24),
 		overflow: 'hidden',
+		marginTop: Platform.OS === "ios" ?  33 : 0 ,
 	},
 });

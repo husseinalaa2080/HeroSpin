@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet , Platform , StatusBar } from 'react-native';
 import { fontScale, scale } from 'react-native-utils-scale';
 
 export default StyleSheet.create({
@@ -20,5 +20,6 @@ export default StyleSheet.create({
 	headerImage: {
 		width: scale(150),
 		height: scale(75),
+		marginTop: Platform.OS === "ios" ?  33 : 0 ,
 	},
 });

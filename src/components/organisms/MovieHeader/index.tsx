@@ -18,7 +18,7 @@ const MovieHeader = ({
 	animatedValue,
 	poster,
 	replay,
-}: {
+}: { 
 	animatedValue: Animated.Value;
 	poster: string;
 	replay?: Function;

@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet ,Platform } from 'react-native';
 import { fontScale, scale } from 'react-native-utils-scale';
 
 export default StyleSheet.create({
@@ -7,6 +7,7 @@ export default StyleSheet.create({
 		justifyContent: 'center',
 		alignItems: 'center',
 		alignSelf: 'stretch',
+		
 	},
 	sectionTitleContainer: {
 		justifyContent: 'center',
